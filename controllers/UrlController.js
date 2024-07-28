@@ -29,7 +29,7 @@ export const CreateShortUrl = async(req,res)=>{
                 await Origin.save()
 
                 await User.findByIdAndUpdate({_id:data.Id},{$push:{Created_Urls:Origin._id}})
-                res.status(200).send({message:"Your Url is shortened"})
+                res.status(200).send({message:"Your Url is shortened","Short_Url" : `https://miniurl-noru.onrender.com/miniUrl/${ShortLink}`})
             }
             else{
                 res.status(400).send({message:"Inactive user,Verify your Account"})
