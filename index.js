@@ -21,5 +21,5 @@ app.use("/users",UserRouter)
 app.use("/",UrlRouter)
 
 //Port Setup
-const Port = process.env.Port || 9000;
+const Port = process.env.PORT || 9000;
 app.listen(Port,()=>console.log(`App is listening on ${Port}`))
