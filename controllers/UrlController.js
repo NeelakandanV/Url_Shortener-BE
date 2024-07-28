@@ -22,7 +22,7 @@ export const CreateShortUrl = async(req,res)=>{
                 }
                 const Origin = await urls.create({
                     Original_Url : req.body.Original_Url,
-                    Short_Url : `http://localhost:5000/miniUrl/${ShortLink}`,
+                    Short_Url : `https://miniurl-noru.onrender.com/miniUrl/${ShortLink}`,
                     Url_id : ShortLink,
                     UrlName : req.body.UrlName
                 })
