@@ -77,7 +77,7 @@ Description: This allow users to update the Original Url for the same mini url t
 Description: This will allow users to get the long urls already shortened by other users or service provider by providing the Original Url in req.body.
 
 ## Mini Url Redirection to Original Url
-### https://miniurl-noru.onrender.com/:id - GET method<br/>
+### https://miniurl-noru.onrender.com/miniUrl/:id - GET method<br/>
 Description-The short Url direct you to the destination Url.
 **( id - Url Id)**
 
