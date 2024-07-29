@@ -94,7 +94,7 @@ export const VerifyUserLink = async(req,res)=>{
                 Name : find_User.First_Name,
                 Email : find_User.Email
             })
-            const link = `https://miniurl-noru.onrender.com/users/verifyUser/${find_User._id}/${ResetString}/${token}`
+            const link = `https://miniurlshortener.netlify.app/users/verifyUser/${find_User._id}/${ResetString}/${token}`
 
             // for Sending mails - nodemailer
                 var transporter = nodemailer.createTransport({
@@ -180,7 +180,7 @@ export const ForgotPassword = async(req,res)=>{
                 Name : find_User.First_Name,
                 Email : find_User.Email
             })
-            const link = `https://miniurl-noru.onrender.com/users/ResetPassword/${find_User._id}/${ResetString}/${token}`
+            const link = `https://miniurlshortener.netlify.app/users/ResetPassword/${find_User._id}/${ResetString}/${token}`
             // for Sending mails - nodemailer
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
