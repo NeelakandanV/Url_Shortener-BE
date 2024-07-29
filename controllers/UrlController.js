@@ -51,8 +51,10 @@ export const getUrls = async(req,res)=>{
         const {id} = req.params;
         const user = await User.findById(id)
         if(user){
+            let token = req.headers.authorization.split(" ")[1]
+            let data = await jwt.decode(token)
             const Url_Data = await User.findById(id).populate('Created_Urls','-_id')
-            res.status(200).send({Created_Urls:Url_Data.Created_Urls})
+            res.status(200).send({Created_Urls:Url_Data.Created_Urls,"UserData":data})
         }
         else{
             res.status(400).send({message:"User Not found!"})
