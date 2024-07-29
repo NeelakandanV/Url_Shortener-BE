@@ -23,7 +23,7 @@ export const LoginUser = async(req,res)=>{
                         Status:find_User.Status,
                         Id : find_User._id
                     })
-                    res.status(200).send({message:"Login Successful",token})
+                    res.status(200).send({message:"Login Successful",token,"UserId":find_User._id})
                 }
                 else{
                     res.status(401).send({message:"Incorrect Password!"})
