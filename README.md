@@ -2,7 +2,7 @@
 
 ### This documentaion provides details about the Url Shortening and redirection, implemented using Node.js and Express. This API allows you to manage  user SignUp , Login , Forgot Password , Reset Password and Delete calls.And also Create mini Urls of longer one,Updating originalUrl.The shortened Url will redirect you to the longer Url,the one you shortened.
 
-## URL - https://miniurl-noru.onrender.com ##
+## URL - https://miniurl-noru.onrender.com/users/ ##
 
 ## Features :-
 ### bcryptjs - For Password hashing,your data is safe and secure.
